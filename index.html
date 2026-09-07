@@ -1,0 +1,288 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portofolio Mahardika Abil</title>
+
+    <style>
+        /* Mengatur semua elemen */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Tampilan halaman */
+        body {
+            background-color: white;
+            color: black;
+        }
+
+        /* Header */
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        /* Menu */
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bagian profil */
+        .profil {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .profil img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid black;
+            margin-bottom: 20px;
+        }
+
+        .profil h2 {
+            margin-bottom: 10px;
+        }
+
+        .profil p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Tombol */
+        .tombol {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .tombol:hover {
+            background-color: #333;
+        }
+
+        /* Bagian umum */
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Tentang saya */
+        .tentang {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        /* Keahlian */
+        .keahlian {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill {
+            border: 1px solid black;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+        }
+
+        /* Proyek */
+        .proyek {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        /* Tampilan HP */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 8px;
+            }
+
+            .profil {
+                padding: 30px 15px;
+            }
+
+            section {
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Mahardika Abil</h1>
+
+        <nav>
+            <a href="#tentang">Tentang</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#proyek">Proyek</a>
+        </nav>
+    </header>
+
+
+    <!-- PROFIL -->
+    <div class="profil">
+
+        <!-- Ganti foto.jpg dengan nama file foto kamu -->
+        <img src="foto.jpg" alt="Foto Mahardika Abil">
+
+        <h2>Halo, Saya Mahardika Abil</h2>
+
+        <p>
+            Saya adalah siswa SMK jurusan PPLG yang tertarik
+            dengan dunia pemrograman dan teknologi.
+        </p>
+
+        <a href="#tentang" class="tombol">Lihat Profil</a>
+
+    </div>
+
+
+    <!-- TENTANG SAYA -->
+    <section id="tentang">
+
+        <h2>Tentang Saya</h2>
+
+        <div class="tentang">
+            <p>
+                Saya merupakan siswa SMK jurusan PPLG.
+                Saya sedang belajar mengenai pemrograman,
+                pembuatan website, dan teknologi komputer.
+                Saya ingin terus mengembangkan kemampuan
+                saya dalam bidang teknologi.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- KEAHLIAN -->
+    <section id="keahlian">
+
+        <h2>Keahlian Saya</h2>
+
+        <div class="keahlian">
+
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Membuat struktur dasar website.</p>
+            </div>
+
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Mengatur tampilan website.</p>
+            </div>
+
+            <div class="skill">
+                <h3>C#</h3>
+                <p>Mempelajari dasar pemrograman.</p>
+            </div>
+
+            <div class="skill">
+                <h3>Desain</h3>
+                <p>Membuat desain sederhana.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROYEK -->
+    <section id="proyek">
+
+        <h2>Proyek Saya</h2>
+
+        <div class="proyek">
+
+            <div class="card">
+                <h3>Website Sederhana</h3>
+                <p>
+                    Membuat website sederhana menggunakan
+                    HTML dan CSS.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Aplikasi Thealth</h3>
+                <p>
+                    Membuat konsep aplikasi kesehatan
+                    sederhana untuk tugas sekolah.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Program C#</h3>
+                <p>
+                    Membuat program sederhana menggunakan
+                    bahasa pemrograman C#.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Mahardika Abil</p>
+    </footer>
+
+</body>
+</html>
